@@ -23,7 +23,7 @@ Just go to website and play <3
   </td>
   <td align=center>
     <a align=center href="https://github.com/DariusiDaniela"><img height=100px src="https://avatars.githubusercontent.com/u/119710520?v=4"></a>
-    <a href="https://github.com/DariusiDaniela"><div align=center>Kokomichrzan</div></a>
+    <a href="https://github.com/DariusiDaniela"><div align=center>DariusiDaniela</div></a>
     <table align=center>
       <td title="Data">📜</td>
     </table>
