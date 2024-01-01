@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="300"
+   height="100"
+   viewBox="0 0 79.374998 26.458333"
+   version="1.1"
+   id="svg1"
+   inkscape:export-filename="Title.svg"
+   inkscape:export-xdpi="36.285713"
+   inkscape:export-ydpi="36.285713"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#505050"
+     inkscape:document-units="mm" />
+  <defs
+     id="defs1">
+    <rect
+       x="11.984479"
+       y="7.8360057"
+       width="285.78375"
+       height="50.703568"
+       id="rect3" />
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <text
+       xml:space="preserve"
+       id="text2"
+       style="font-size:40px;font-family:Oswald;-inkscape-font-specification:'Oswald, @wght=500';font-variation-settings:'wght' 500;text-align:center;white-space:pre;shape-inside:url(#rect3);fill:#ffd556;stroke:#000000;stroke-width:1;stroke-dasharray:none"
+       transform="matrix(0.62641466,0,0,0.55854947,-57.592187,-2.9775192)"><tspan
+         x="93.017952"
+         y="45.035668"
+         id="tspan1">Brawdle</tspan></text>
+  </g>
+</svg>
