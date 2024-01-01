@@ -20,7 +20,7 @@
 
 </div>
 
-<img height="200px" src="https://github.com/Kokomichrzan/Kokomichrzan-Repo-Template/blob/Info/Assets/Thanks.gif">
+<img height="200px" src="https://github.com/Kokomichrzan/Brawdle/blob/Info/Assets/Thanks.gif">
 
 # Contributors
 

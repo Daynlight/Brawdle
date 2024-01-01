@@ -1,5 +1,5 @@
 <div align=center>
-  <img width=100% src="https://github.com/Kokomichrzan/Kokomichrzan-Repo-Template/blob/Info/Assets/Background.gif">
+  <img width=100% src="https://github.com/Kokomichrzan/Brawdle/blob/Info/Assets/Background.gif">
 <h1>💖Title💖</h1>
 
 <h2>🌐About🌐</h2>
@@ -20,6 +20,6 @@
 
 <h2>🔥Features🔥</h2>
 
-<img height=200px src="https://github.com/Kokomichrzan/Kokomichrzan-Repo-Template/blob/Info/Assets/Features.gif">
+<img height=200px src="https://github.com/Kokomichrzan/Brawdle/blob/Info/Assets/Features.gif">
 
 </div>
