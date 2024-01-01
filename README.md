@@ -29,9 +29,4 @@ Just go to website and play <3
     </table>
   </td>
 </table>
-
-<h2>🔥Features🔥</h2>
-
-<img height=200px src="https://github.com/Kokomichrzan/Brawdle/blob/Info/Assets/Features.gif">
-
 </div>
