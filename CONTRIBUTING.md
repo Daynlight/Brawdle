@@ -41,11 +41,12 @@
 
 <table>
   <td align=center>
-    none
+    <a align=center href="https://github.com/DariusiDaniela"><img height=100px src="https://avatars.githubusercontent.com/u/119710520?v=4"></a>
+    <a href="https://github.com/DariusiDaniela"><div align=center>Kokomichrzan</div></a>
+    <table align=center>
+      <td title="Data">📜</td>
+    </table>
   </td>
 </table>
-
-## Contributors Who Helped With Project
-
 
 </div>
