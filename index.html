@@ -3,23 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="Assets/Icon.jpg" type="image/jpeg">
     <link rel="stylesheet" href="index.css">
+    <link rel="shortcut icon" href="Assets/Icon.jpg" type="image/x-icon">
     <title>Brawdle</title>
 </head>
 <body>
-    <dir class="Title">
-        <div><img src="Assets/Icon.jpg" alt="Icon"></div>
-        <div><img src="Assets/Title.svg" alt="Title"></div>
-    </dir>
-    <dir class="ModesCanvas">
-        <div class="Modes">
-            <a class="Link" href="InProgres.html">Clasic</a>
-            <a class="Link" href="InProgres.html">Quote</a>
-            <a class="Link" href="InProgres.html">Ability</a>
-            <a class="Link" href="InProgres.html">Emoji</a>
-            <a class="Link" href="InProgres.html">Splash</a>
+    <div class="Body">
+        <div class="TitleBar">
+            <div onclick="document.location = 'index.html'">Classic</div>
+            <div onclick="document.location = 'Quote.html'">Quote</div>
+            <div onclick="document.location = 'Emoji.html'">Emoji</div>
+            <div onclick="document.location = 'Splash.html'">Splash</div>
+            <div onclick="document.location = 'Powers.html'">Powers</div>
         </div>
-    </dir>
+        <div class="Chempions" id="Chempions"></div>
+        <div class="WinChempion" id="WinChempion"></div>
+        <div class="Attrib" id="Attrib">
+            <table class="ChempionsAttrib" id="ChempionsAttrib">
+                <tr>
+                    <th class="TableIcon">Icon</th>
+                    <th>Gender</th>
+                    <th>Role</th>
+                    <th>Rarity</th>
+                    <th>Release Year</th>
+                    <th>Family</th>
+                </tr>
+            </table>
+        </div>
+    </div>
 </body>
+<script type="module" src="Classic.js"></script>
 </html>

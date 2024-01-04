@@ -1,83 +1,120 @@
 :root{
-    --MainColor: White;
-    --SecondaryColor: gray;
-    --AnimationTime: 1s;
-}
-
-::-webkit-scrollbar{
-    width: 0px;
-    height: 0px;
+    --BackgroundColor: black;
+    --TextColor: white;
+    --TopBarHeight: 50px;
+    --TopBarGap: 3px;
+    --TopBarItemsColor: rgba(0, 0, 0, 0.512);
+    --TopBarHoverItemsColor: rgba(0, 0, 0, 0.745);
+    --AnimationDuration: 1s;
+    --BackgroundDimm: radial-gradient(rgba(0, 0, 0, 0.337), rgba(0, 0, 0, 0.576));
+    --ChempionsSize: 100px;
+    --Correct: green;
+    --InCorrect: red;
 }
 
 *{
+    color: var(--TextColor);
+    overflow: hidden;
     margin: 0;
     padding: 0;
-    color: var(--MainColor);
+    border: 0;
     font-family: monospace;
 }
 
-body{
-    background: url("Assets/Background.jpg") no-repeat center center fixed;
+body { font-size: 150%;}
+
+body, .Body{
+    background: url(Assets/Background.jpg) no-repeat center center fixed;
     background-size: cover;
     width: 100vw;
-    height: calc(100vh - 10px);
-    font-size: 200%;
-    backdrop-filter: blur(5px);
+    height: 100vh;
 }
 
-.ModesCanvas{
+.Body{
+    background-image: var(--BackgroundDimm);
+    width: 100vw;
+    height: 100vh;
+}
+
+.TitleBar{
+    display: grid;
+    position: fixed;
+    grid-template-columns: repeat(5, 1fr);
     width: 100%;
-    height: fit-content;
-    margin-top: 50px;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-}
-.Modes{
-    text-align: center;
-    border: 5px solid black;
-    border-radius: 10px;
-    background-color: rgba(0, 0, 0, 0.471);
-    padding: 50px;
+    height: var(--TopBarHeight);
 }
 
-.Link{
-    border-top: 5px solid black;
-    border-bottom: 5px solid black;
-    width: 200px;
-    height: 50px;
-    margin-bottom: 10px;
-    background-color: rgba(0, 0, 0, 0.499);
+.TitleBar > div{
+    width: calc(100% - var(--TopBarGap) * 2);
+    margin: 0px var(--TopBarGap);
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: var(--AnimationTime);
+    background-color: var(--TopBarItemsColor);
+    transition: var(--AnimationDuration);
+    cursor: pointer;
 }
 
-a{
-    text-decoration: none;
+.TitleBar > div:hover{
+    background-color: var(--TopBarHoverItemsColor);
+    transition: var(--AnimationDuration);
 }
 
-.Link:hover{
-    color: var(--SecondaryColor);
-    transition: var(--AnimationTime);
-    transform: translate(10px);
-}
-
-.Title{
-    font-size: 150%;
-    width: 100vw;
-    height: 100px;
-    margin-top: 10px;
-
-}
-.Title>div{
+.Chempions{
+    margin-top: var(--TopBarHeight);
     width: 100%;
-    height: 50%;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(var(--ChempionsSize), max-content));
     justify-content: center;
 }
 
-.Title>div>img{
+.Chempions > div{
+    width: var(--ChempionsSize);
+    height: var(--ChempionsSize);
+}
+
+.Chempions > div > img{
+    width: 100%;
     height: 100%;
+}
+
+.ChempionUsed{
+    filter: saturate(0);
+}
+
+.WinChempion{
+    text-align: center;
+    width: 100%;
+}
+
+.WinChempion > img{
+    width: var(--ChempionsSize);
+    height: var(--ChempionsSize);
+}
+
+.Attrib{
+    overflow-y: auto;
+}
+
+.ChempionsAttrib{
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+.ChempionsAttrib > tbody > tr > td, .ChempionsAttrib > tbody > tr > th{
+    border: 5px solid black;
+    background-image: var(--BackgroundDimm);
+}
+
+.TableIcon{
+    width: var(--ChempionsSize);
+}
+
+.Correct{
+    background-color: var(--Correct);
+}
+
+.InCorrect{
+    background-color: var(--InCorrect);
 }

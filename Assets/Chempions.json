@@ -1,0 +1,47 @@
+{
+    "0":{
+        "Name": "Edgar",
+        "Icon": "Edgar.png",
+        "Gender": "Male",
+        "Role": "Assassin",
+        "Rarity": "Epic",
+        "ReleaseYear": "2019",
+        "Family": "Gift Shop"
+    },
+    "1":{
+        "Name": "Dynamike",
+        "Icon": "Dynamike.png",
+        "Gender": "Male",
+        "Role": "Artillery",
+        "Rarity": "Super Rare",
+        "ReleaseYear": "2017",
+        "Family": "Gem Miners"
+    },
+    "2":{
+        "Name": "Jessie",
+        "Icon": "Jessie.png",
+        "Gender": "Female",
+        "Role": "Controller",
+        "Rarity": "Super Rare",
+        "ReleaseYear": "2017",
+        "Family": "Junker Family"
+    },
+    "3":{
+        "Name": "Shelly",
+        "Icon": "Shelly.png",
+        "Gender": "Female",
+        "Role": "Damage Dealer",
+        "Rarity": "Starting",
+        "ReleaseYear": "2017",
+        "Family": "Wild West"
+    },
+    "4":{
+        "Name": "Bonnie",
+        "Icon": "Bonnie.png",
+        "Gender": "Female",
+        "Role": "Marksman",
+        "Rarity": "Epic",
+        "ReleaseYear": "2022",
+        "Family": "Stunt Show"
+    }
+}
