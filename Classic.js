@@ -26,12 +26,12 @@ function AddEventClick(id){
 
 //Check Chempion
 async function CheckChempion(id){
-    Try++;
     var ID = id.currentTarget.myParam;
     var CurrentChempion = document.getElementById(`Chempion${ID}`);
 
     if(CurrentChempion.className == "ChempionUsed" || Winned) return 0;
     Winned = true
+    Try++;
     
     CheckAttrib(ID);
 
