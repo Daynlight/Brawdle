@@ -31,7 +31,8 @@ async function CheckChempion(id){
     var CurrentChempion = document.getElementById(`Chempion${ID}`);
 
     if(CurrentChempion.className == "ChempionUsed" || Winned) return 0;
-
+    Winned = true
+    
     CheckAttrib(ID);
 
     await delay(AnimationTime * 5);
@@ -45,6 +46,7 @@ async function CheckChempion(id){
     }
     else
     {
+        Winned = false;
         CurrentChempion.className = "ChempionUsed";
         return 0;
     }
