@@ -72,7 +72,7 @@ body, .Body{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(var(--ChempionsSize), max-content));
     justify-content: center;
-    overflow: auto;
+    overflow-y: auto;
     border: 5px solid black;
 }
 
@@ -101,7 +101,7 @@ body, .Body{
 }
 
 .Attrib{
-    overflow: auto;
+    overflow-y: auto;
     width: 100%;
     height: calc(70% - var(--TopBarHeight) - 100px);
     margin-top: var(--TopBarHeight);
@@ -127,4 +127,15 @@ body, .Body{
 
 .InCorrect{
     background-color: var(--InCorrect);
+}
+
+@media only screen and (max-width: 535px) {
+    :root{
+        --ChempionsSize: 70px
+    }
+    body { font-size: 100%;}
+}
+
+@media only screen and (max-width: 375px) {
+    body { font-size: 80%;}
 }
