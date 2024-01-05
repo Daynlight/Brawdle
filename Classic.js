@@ -40,7 +40,7 @@ async function CheckChempion(id){
     if(WinnerChempion == ID)
     {
         Winned = true;
-        WinDiv.innerHTML = `Congrats, Yoy guessed at ${Try} time. That was ${Chempions[ID].Name} <3</br>
+        WinDiv.innerHTML = `Congrats, You guessed at ${Try} time. That was ${Chempions[ID].Name} <3</br>
         <img src="Assets/Chempions/${Chempions[ID].Icon}">`;
         return 0;
     }
