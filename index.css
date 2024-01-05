@@ -103,7 +103,7 @@ body, .Body{
 .Attrib{
     overflow: auto;
     width: 100%;
-    height: calc(70% - var(--TopBarHeight));
+    height: calc(70% - var(--TopBarHeight) - 100px);
     margin-top: var(--TopBarHeight);
 }
 
