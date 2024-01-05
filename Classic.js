@@ -58,7 +58,8 @@ function delay(time) {
 
 async function CheckAttrib(ID){
     //Add Chempion
-    var Row = AttribDiv.insertRow(1);
+    var Ref = AttribDiv.getElementsByTagName('tbody')[0];
+    var Row = Ref.insertRow(0);
     Row.insertCell(0).innerHTML = `<img class="TableIcon" src="Assets/Chempions/${Chempions[ID].Icon}">`;
     var Gender = Row.insertCell(1)
     var Role = Row.insertCell(2);
@@ -94,8 +95,8 @@ async function CheckAttrib(ID){
 function AtrribFillSize(){
     var WinChempionSize = document.getElementById("WinChempion").clientHeight;
     var ChempionsSize = document.getElementById("Chempions").clientHeight;
-    var Height = window.innerHeight - (WinChempionSize + ChempionsSize) - 100;
-    document.getElementById("Attrib").style.height = `${Height}px`;
+    var Height = window.innerHeight - (WinChempionSize + ChempionsSize) - 30;
+    if(document.getElementById("Attrib").clientHeight >= Height)document.getElementById("Attrib").style.height = `${Height}px`;
 }
 
-setInterval(AtrribFillSize, 100);
+setInterval(AtrribFillSize, 1);

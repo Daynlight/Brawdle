@@ -12,6 +12,11 @@
     --InCorrect: red;
 }
 
+::-webkit-scrollbar{
+    width: 0px;
+    height: 0px;
+}
+
 *{
     color: var(--TextColor);
     margin: 0;
@@ -67,7 +72,7 @@ body, .Body{
 
 .Chempions{
     /* margin-top: var(--TopBarHeight); */
-    width: 100%;
+    width: calc(100% - 10px);
     max-height: 30%;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(var(--ChempionsSize), max-content));
@@ -102,17 +107,23 @@ body, .Body{
 
 .Attrib{
     overflow-y: auto;
-    width: 100%;
-    height: calc(70% - 5px - 100px);
+    width: calc(100% - 10px);
     margin-top: 5px;
+    border: 5px solid black;
 }
 
 .ChempionsAttrib{
     width: 100%;
-    border-collapse: collapse;
     text-align: center;
+    border-collapse: collapse;
 }
-.ChempionsAttrib > tbody > tr > td, .ChempionsAttrib > tbody > tr > th{
+
+.Attrib thead th{
+    position: sticky;
+    top: 0;
+}
+
+td, th{
     border: 5px solid black;
     background-image: var(--BackgroundDimm);
 }
@@ -145,7 +156,7 @@ body, .Body{
     }
 }
 
-@media only screen and (max-width: 535px) {
+@media only screen and (max-width: 600px) {
     :root{
         --ChempionsSize: 70px
     }
