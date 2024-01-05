@@ -1,5 +1,5 @@
-{
-    "0":{
+[
+    {
         "Name": "8-Bit",
         "Icon": "8-Bit.png",
         "Gender": "Bot",
@@ -8,7 +8,7 @@
         "ReleaseYear": "2019",
         "Family": "Arcade"
     },
-    "1":{
+    {
         "Name": "Amber",
         "Icon": "Amber.png",
         "Gender": "Female",
@@ -17,7 +17,7 @@
         "ReleaseYear": "2020",
         "Family": "Mexican Entertainers"
     },
-    "2":{
+    {
         "Name": "Ash",
         "Icon": "Ash.png",
         "Gender": "Bin",
@@ -26,7 +26,7 @@
         "ReleaseYear": "2021",
         "Family": "Fantasy"
     },
-    "3":{
+    {
         "Name": "Barley",
         "Icon": "Barley.png",
         "Gender": "Bot",
@@ -35,7 +35,7 @@
         "ReleaseYear": "2017",
         "Family": "Townsfolk"
     },
-    "4":{
+    {
         "Name": "Bea",
         "Icon": "Bea.png",
         "Gender": "Female",
@@ -44,7 +44,7 @@
         "ReleaseYear": "2019",
         "Family": "Biology Team"
     },
-    "5":{
+    {
         "Name": "Belle",
         "Icon": "Belle.png",
         "Gender": "Female",
@@ -53,7 +53,7 @@
         "ReleaseYear": "2021",
         "Family": "Goldarm Gang"
     },
-    "6":{
+    {
         "Name": "Bibi",
         "Icon": "Bibi.png",
         "Gender": "Female",
@@ -62,7 +62,7 @@
         "ReleaseYear": "2019",
         "Family": "Retropolis Gang"
     },
-    "7":{
+    {
         "Name": "Bo",
         "Icon": "Bo.png",
         "Gender": "Male",
@@ -71,7 +71,7 @@
         "ReleaseYear": "2017",
         "Family": "Shaman Tribe"
     },
-    "8":{
+    {
         "Name": "Bonnie",
         "Icon": "Bonnie.png",
         "Gender": "Female",
@@ -80,7 +80,7 @@
         "ReleaseYear": "2022",
         "Family": "Stunt Show"
     },
-    "9":{
+    {
         "Name": "Brock",
         "Icon": "Brock.png",
         "Gender": "Male",
@@ -89,7 +89,7 @@
         "ReleaseYear": "2017",
         "Family": "Arcade"
     },
-    "10":{
+    {
         "Name": "Bull",
         "Icon": "Bull.png",
         "Gender": "Male",
@@ -98,7 +98,7 @@
         "ReleaseYear": "2017",
         "Family": "Retropolis Gang"
     },
-    "11":{
+    {
         "Name": "Buster",
         "Icon": "Buster.png",
         "Gender": "Male",
@@ -107,7 +107,7 @@
         "ReleaseYear": "2022",
         "Family": "Starr Theatre"
     },
-    "12":{
+    {
         "Name": "Buzz",
         "Icon": "Buzz.png",
         "Gender": "Male",
@@ -116,7 +116,7 @@
         "ReleaseYear": "2021",
         "Family": "Velocirapids"
     },
-    "13":{
+    {
         "Name": "Byron",
         "Icon": "Byron.png",
         "Gender": "Male",
@@ -125,7 +125,7 @@
         "ReleaseYear": "2020",
         "Family": "Townsfolk"
     },
-    "14":{
+    {
         "Name": "Carl",
         "Icon": "Carl.png",
         "Gender": "Male",
@@ -134,7 +134,7 @@
         "ReleaseYear": "2019",
         "Family": "Gem Miners"
     },
-    "15":{
+    {
         "Name": "Charlie",
         "Icon": "Charlie.png",
         "Gender": "Female",
@@ -143,4 +143,4 @@
         "ReleaseYear": "2023",
         "Family": "Blzarre Circus"
     }
-}
+]
