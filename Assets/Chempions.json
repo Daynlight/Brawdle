@@ -1,41 +1,77 @@
 {
     "0":{
-        "Name": "Edgar",
-        "Icon": "Edgar.png",
-        "Gender": "Male",
-        "Role": "Assassin",
-        "Rarity": "Epic",
+        "Name": "8-Bit",
+        "Icon": "8-Bit.png",
+        "Gender": "Bot",
+        "Role": "Damage Dealer",
+        "Rarity": "Super Rare",
         "ReleaseYear": "2019",
-        "Family": "Gift Shop"
+        "Family": "Arcade"
     },
     "1":{
-        "Name": "Dynamike",
-        "Icon": "Dynamike.png",
-        "Gender": "Male",
-        "Role": "Artillery",
-        "Rarity": "Super Rare",
-        "ReleaseYear": "2017",
-        "Family": "Gem Miners"
-    },
-    "2":{
-        "Name": "Jessie",
-        "Icon": "Jessie.png",
+        "Name": "Amber",
+        "Icon": "Amber.png",
         "Gender": "Female",
         "Role": "Controller",
-        "Rarity": "Super Rare",
-        "ReleaseYear": "2017",
-        "Family": "Junker Family"
+        "Rarity": "Legendary",
+        "ReleaseYear": "2020",
+        "Family": "Mexican Entertainers"
+    },
+    "2":{
+        "Name": "Ash",
+        "Icon": "Ash.png",
+        "Gender": "Bin",
+        "Role": "Tank",
+        "Rarity": "Epic",
+        "ReleaseYear": "2021",
+        "Family": "Fantasy"
     },
     "3":{
-        "Name": "Shelly",
-        "Icon": "Shelly.png",
-        "Gender": "Female",
-        "Role": "Damage Dealer",
-        "Rarity": "Starting",
+        "Name": "Barley",
+        "Icon": "Barley.png",
+        "Gender": "Bot",
+        "Role": "Artillery",
+        "Rarity": "Rare",
         "ReleaseYear": "2017",
-        "Family": "Wild West"
+        "Family": "Townsfolk"
     },
     "4":{
+        "Name": "Bea",
+        "Icon": "Bea.png",
+        "Gender": "Female",
+        "Role": "Marksman",
+        "Rarity": "Epic",
+        "ReleaseYear": "2019",
+        "Family": "Biology Team"
+    },
+    "5":{
+        "Name": "Belle",
+        "Icon": "Belle.png",
+        "Gender": "Female",
+        "Role": "Marksman",
+        "Rarity": "Epic",
+        "ReleaseYear": "2021",
+        "Family": "Goldarm Gang"
+    },
+    "6":{
+        "Name": "Bibi",
+        "Icon": "Bibi.png",
+        "Gender": "Female",
+        "Role": "Tank",
+        "Rarity": "Epic",
+        "ReleaseYear": "2019",
+        "Family": "Retropolis Gang"
+    },
+    "7":{
+        "Name": "Bo",
+        "Icon": "Bo.png",
+        "Gender": "Male",
+        "Role": "Controller",
+        "Rarity": "Epic",
+        "ReleaseYear": "2017",
+        "Family": "Shaman Tribe"
+    },
+    "8":{
         "Name": "Bonnie",
         "Icon": "Bonnie.png",
         "Gender": "Female",
@@ -43,5 +79,68 @@
         "Rarity": "Epic",
         "ReleaseYear": "2022",
         "Family": "Stunt Show"
+    },
+    "9":{
+        "Name": "Brock",
+        "Icon": "Brock.png",
+        "Gender": "Male",
+        "Role": "Marksman",
+        "Rarity": "Rare",
+        "ReleaseYear": "2017",
+        "Family": "Arcade"
+    },
+    "10":{
+        "Name": "Bull",
+        "Icon": "Bull.png",
+        "Gender": "Male",
+        "Role": "Tank",
+        "Rarity": "Rare",
+        "ReleaseYear": "2017",
+        "Family": "Retropolis Gang"
+    },
+    "11":{
+        "Name": "Buster",
+        "Icon": "Buster.png",
+        "Gender": "Male",
+        "Role": "Tank",
+        "Rarity": "Mythic",
+        "ReleaseYear": "2022",
+        "Family": "Starr Theatre"
+    },
+    "12":{
+        "Name": "Buzz",
+        "Icon": "Buzz.png",
+        "Gender": "Male",
+        "Role": "Assassin",
+        "Rarity": "Mythic",
+        "ReleaseYear": "2021",
+        "Family": "Velocirapids"
+    },
+    "13":{
+        "Name": "Byron",
+        "Icon": "Byron.png",
+        "Gender": "Male",
+        "Role": "Support",
+        "Rarity": "Mythic",
+        "ReleaseYear": "2020",
+        "Family": "Townsfolk"
+    },
+    "14":{
+        "Name": "Carl",
+        "Icon": "Carl.png",
+        "Gender": "Male",
+        "Role": "Damage Dealer",
+        "Rarity": "Super Rare",
+        "ReleaseYear": "2019",
+        "Family": "Gem Miners"
+    },
+    "15":{
+        "Name": "Charlie",
+        "Icon": "Charlie.png",
+        "Gender": "Female",
+        "Role": "Controller",
+        "Rarity": "Mythic",
+        "ReleaseYear": "2023",
+        "Family": "Blzarre Circus"
     }
 }
