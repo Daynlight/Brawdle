@@ -90,12 +90,3 @@ async function CheckAttrib(ID){
     else  Family.className = "InCorrect";
 
 }
-
-function AtrribFillSize(){
-    var WinChempionSize = document.getElementById("WinChempion").clientHeight;
-    var ChempionsSize = document.getElementById("Chempions").clientHeight;
-    var Height = window.innerHeight - (WinChempionSize + ChempionsSize) - 100;
-    document.getElementById("Attrib").style.height = `${Height}px`;
-}
-
-setInterval(AtrribFillSize, 100);

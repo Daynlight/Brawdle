@@ -14,10 +14,10 @@
 
 *{
     color: var(--TextColor);
-    overflow: hidden;
     margin: 0;
     padding: 0;
     border: 0;
+    overflow: hidden;
     font-family: monospace;
 }
 
@@ -32,6 +32,10 @@ body, .Body{
 
 .Body{
     background-image: var(--BackgroundDimm);
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    left: 0;
     width: 100vw;
     height: 100vh;
 }
@@ -62,11 +66,14 @@ body, .Body{
 }
 
 .Chempions{
-    margin-top: var(--TopBarHeight);
+    /* margin-top: var(--TopBarHeight); */
     width: 100%;
+    height: 30%;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(var(--ChempionsSize), max-content));
     justify-content: center;
+    overflow: auto;
+    border: 5px solid black;
 }
 
 .Chempions > div{
@@ -94,7 +101,10 @@ body, .Body{
 }
 
 .Attrib{
-    overflow-y: auto;
+    overflow: auto;
+    width: 100%;
+    height: calc(70% - var(--TopBarHeight));
+    margin-top: var(--TopBarHeight);
 }
 
 .ChempionsAttrib{
