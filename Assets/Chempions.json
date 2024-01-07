@@ -142,5 +142,14 @@
         "Rarity": "Mythic",
         "ReleaseYear": "2023",
         "Family": "Blzarre Circus"
+    },
+    {
+        "Name": "EMZ",
+        "Icon": "EMZ.png",
+        "Gender": "Female",
+        "Role": "Controller",
+        "Rarity": "Epic",
+        "ReleaseYear": "2019",
+        "Family": "Undead"
     }
 ]
