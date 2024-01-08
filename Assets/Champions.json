@@ -315,8 +315,8 @@
         "Family": "Shaman Tribe"
     },
     {
-        "Name": "Genie",
-        "Icon": "Genie.png",
+        "Name": "Gene",
+        "Icon": "Gene.png",
         "Gender": "Male",
         "Role": "Controller",
         "Rarity": "Mythic",
