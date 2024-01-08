@@ -90,6 +90,7 @@ body {
     overflow-y: auto;
     width: calc(100% - 20px);
     max-height: calc(100% - 5px);
+    min-height: 200px;
     justify-content: center;
     margin-left: 5px;
     margin-bottom: 5px;
@@ -206,9 +207,9 @@ body {
     transition: var(--AnimationDuration);
 }
 
-.WinnerChempion > img{
-    width: var(--ChampionsSize);
-    height: var(--ChampionsSize);
+.WinnerChempion > div > img{
+    width: 70%;
+    height: 70%;
 }
 
 /*[Note]: Responsive*/
@@ -233,3 +234,21 @@ body {
         --ChampionsSize: 80px;
     }
 }
+
+@media only screen and (max-height: 650px) {
+    .WinnerChempion > div > img{
+        width: 40%;
+        height: 40%;
+    }
+}
+
+@media only screen and (max-height: 400px) {
+    .WinnerChempion > div > img{
+        width: 30%;
+        height: 30%;
+    }
+    .ChampionsList{
+        min-height: 100px;
+    }
+}
+
