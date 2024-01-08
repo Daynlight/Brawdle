@@ -612,15 +612,6 @@
         "Family": "Starr Theatre"
     },
     {
-        "Name": "Maisie",
-        "Icon": "Maisie.png",
-        "Gender": "Female",
-        "Role": "Marksman",
-        "Rarity": "Epic",
-        "ReleaseYear": "2023",
-        "Family": "Starr Theatre"
-    },
-    {
         "Name": "Hank",
         "Icon": "Hank.png",
         "Gender": "Male",
