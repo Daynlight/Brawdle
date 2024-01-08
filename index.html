@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta property="og:type" content="website" />
+    <meta property="og:type" content="Game" />
     <meta property="og:title" content="Brawdle" />
     <meta property="og:url" content="https://kokomichrzan.github.io/Brawdle/index.html" />
     <meta property="og:image:url" content="https://raw.githubusercontent.com/kokomichrzan/Brawdle/WebSite/Assets/ogImage.jpg#keepProtocol" />
@@ -17,10 +17,12 @@
 
     <link rel="stylesheet" href="index.css">
     <link rel="shortcut icon" href="Assets/Icon.png" type="image/x-icon">
+
     <title>Brawdle</title>
 </head>
 <body>
-    <!-- <div class="TitleBar">
+    <!--[Note]: Will be added with new game modes--> 
+    <!-- <div class="TopBar">
         <div onclick="document.location = 'index.html'">Classic</div>
         <div onclick="document.location = 'Quote.html'">Quote</div>
         <div onclick="document.location = 'Emoji.html'">Emoji</div>
@@ -28,27 +30,29 @@
         <div onclick="document.location = 'Powers.html'">Powers</div>
     </div> -->
     
-    <div class="Champions" id="Champions"></div>
+    <div class="GameCanva">
+        <div class="ChampionsList" id="ChampionsList"></div>
 
-    <div class="WinChempion" id="WinChempion"></div>
-
-    <div class="Attrib" id="Attrib">
-        <table tabindex="0" class="ChampionsAttrib" id="ChampionsAttrib">
-            <thead>
-                <tr>
-                    <th class="TableIcon">Icon</th>
-                    <th>Gender</th>
-                    <th>Role</th>
-                    <th>Rarity</th>
-                    <th>Release Year</th>
-                    <th>Family</th>
-                </tr>
-            </thead>
-            <tbody></tbody>
-        </table>
+        <div class="AttribList" id="AttribList">
+            <table>
+                <thead>
+                    <tr>
+                        <th class="TableIcon">Icon</th>
+                        <th>Gender</th>
+                        <th>Role</th>
+                        <th>Rarity</th>
+                        <th>Release Year</th>
+                        <th>Family</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
     </div>
 
-    <div class="Body"></div>
-    <script type="module" src="Classic.js"></script>
+    <div class="WinnerChempion" id="WinnerChempion"></div>
+
+    <div class="BackgroundDimm"></div>
 </body>
+<script type="module" src="Classic.js"></script>
 </html>

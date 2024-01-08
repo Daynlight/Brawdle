@@ -1,5 +1,4 @@
 :root{
-    --BackgroundColor: black;
     --TextColor: white;
     --TopBarHeight: 50px;
     --TopBarGap: 3px;
@@ -7,9 +6,12 @@
     --TopBarHoverItemsColor: rgba(0, 0, 0, 0.745);
     --AnimationDuration: 1s;
     --BackgroundDimm: radial-gradient(rgba(0, 0, 0, 0.337), rgba(0, 0, 0, 0.576));
+    --WinnerDim: rgba(0, 0, 0, 0.651);
     --ChampionsSize: 100px;
     --Correct: green;
     --InCorrect: red;
+    --ButtonColor: rgb(108, 186, 108);
+    --ButtonColorHover: rgb(49, 99, 49);
 }
 
 ::-webkit-scrollbar{
@@ -26,16 +28,14 @@
     font-family: monospace;
 }
 
-body { font-size: 150%;}
-
-body, .Body{
+body { 
     background: url(Assets/Background.jpg) no-repeat center center fixed;
     background-size: cover;
     width: 100vw;
     height: 100vh;
 }
 
-.Body{
+.BackgroundDimm{
     background-image: var(--BackgroundDimm);
     position: fixed;
     z-index: -1;
@@ -45,7 +45,7 @@ body, .Body{
     height: 100vh;
 }
 
-.TitleBar{
+.TopBar{
     display: grid;
     position: fixed;
     grid-template-columns: repeat(5, 1fr);
@@ -53,7 +53,7 @@ body, .Body{
     height: var(--TopBarHeight);
 }
 
-.TitleBar > div{
+.TopBar > div{
     width: calc(100% - var(--TopBarGap) * 2);
     margin: 0px var(--TopBarGap);
     height: 100%;
@@ -65,71 +65,90 @@ body, .Body{
     cursor: pointer;
 }
 
-.TitleBar > div:hover{
+.TopBar > div:hover{
     background-color: var(--TopBarHoverItemsColor);
     transition: var(--AnimationDuration);
 }
 
-.Champions{
-    /* margin-top: var(--TopBarHeight); */
-    width: calc(100% - 10px);
-    max-height: 30%;
+.GameCanva{
+    /* margin-top: calc(var(--TopBarHeight) + var(--TopBarGap)); */
+    /* height: calc(100% - var(--TopBarHeight) - var(--TopBarGap)); */
+    margin-top: var(--TopBarGap);
+    height: calc(100% - var(--TopBarGap));
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(var(--ChampionsSize), max-content));
-    justify-content: center;
-    overflow-y: auto;
-    border: 5px solid black;
+    grid-template-columns: 1fr 2fr;
 }
 
-.Champions > div{
+.GameCanva > div{
+    border: 5px solid black;
+    border-radius: 20px;
+}
+
+.ChampionsList{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(var(--ChampionsSize), max-content));
+    overflow-y: auto;
+    width: calc(100% - 20px);
+    max-height: calc(100% - 5px);
+    justify-content: center;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    background-color: var(--WinnerDim);
+}
+
+.ChampionsList > div{
     width: var(--ChampionsSize);
     height: var(--ChampionsSize);
 }
 
-.Champions > div > img{
+.ChampionsList > div > img{
     width: 100%;
     height: 100%;
 }
 
-.ChempionUsed{
-    filter: saturate(0);
+.UsedChempion{
+    animation-name: UsedAnimation;
+    animation-duration: var(--AnimationDuration);
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
 
-.WinChempion{
-    text-align: center;
-    width: 100%;
+@keyframes UsedAnimation {
+    0%{
+
+    }
+    30%{
+        rotate: 3500deg;
+        transform: scale(0.5);
+    }
+    100%{
+        position: absolute;
+        top: -100%;
+        filter: saturate(1);
+        rotate: 3500deg;
+        transform: scale(0);
+    }
 }
 
-.WinChempion > img{
-    width: var(--ChampionsSize);
-    height: var(--ChampionsSize);
-}
-
-.Attrib{
+.AttribList{
     overflow-y: auto;
-    width: calc(100% - 10px);
-    margin-top: 5px;
-    border: 5px solid black;
+    width: calc(100% - 20px);
+    max-height: calc(100% - 15px);
+    margin-left: 5px;
+    font-size: large;
+    background-color: var(--WinnerDim);
 }
 
-.ChampionsAttrib{
+.AttribList > table{
     width: 100%;
     text-align: center;
+    border-radius: 10px;
     border-collapse: collapse;
 }
 
-.Attrib thead th{
-    position: sticky;
-    top: 0;
-}
-
-td, th{
-    border: 5px solid black;
+.AttribList > table > * > tr > td, .AttribList > table > * > tr > th{
     background-image: var(--BackgroundDimm);
-}
-
-.TableIcon{
-    width: var(--ChampionsSize);
+    border: 5px solid black;
 }
 
 .Correct{
@@ -140,33 +159,77 @@ td, th{
     background-color: var(--InCorrect);
 }
 
+.TableIcon{
+    width: var(--ChampionsSize);
+}
 
-@media only screen and (min-width: 1024px) {
-    body { font-size: 200%;}
-    :root{
-        --ChampionsSize: 150px
+.WinnerChempion{
+    position: absolute;
+    text-align: center;
+    width: 100vw;
+    top: 0;
+    height: 100vh;
+    background-color: var(--WinnerDim);
+    display: none;
+    font-size: 200%;
+    justify-content: center;
+    align-items: center;
+    background-image: url(Assets/Congrats.gif);
+    transition: var(--AnimationDuration);
+    animation-name: WinnerAnimation;
+    animation-duration: var(--AnimationDuration);
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes WinnerAnimation {
+    0%{
+        transform: scale(0);
+    }
+    100%{
+        transform: scale(1);
     }
 }
 
+.WinnerChempion > div > button{
+    color: black;
+    min-width: 30%;
+    min-height: 50px;
+    background-color: var(--ButtonColor);
+    font-size: large;
+    cursor: pointer;
+    transition: var(--AnimationDuration);
+}
 
-@media only screen and (min-width: 2560px) {
-    body { font-size: 600%;}
-    :root{
-        --ChampionsSize: 300px
+.WinnerChempion > div > button:hover{
+    background-color: var(--ButtonColorHover);
+    transition: var(--AnimationDuration);
+}
+
+.WinnerChempion > img{
+    width: var(--ChampionsSize);
+    height: var(--ChampionsSize);
+}
+
+/*[Note]: Responsive*/
+@media only screen and (max-width: 1024px) {
+    .GameCanva{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 2fr;
     }
 }
 
 @media only screen and (max-width: 600px) {
-    :root{
-        --ChampionsSize: 70px
+    *{
+        font-size: 90%;
     }
-    body { font-size: 100%;}
 }
 
-@media only screen and (max-width: 375px) {
-    body { font-size: 80%;}
-}
-
-@media only screen and (max-width: 320px) {
-    body { font-size: 60%;}
+@media only screen and (max-width: 370px) {
+    *{
+        font-size: 80%;
+    }
+    :root{
+        --ChampionsSize: 80px;
+    }
 }

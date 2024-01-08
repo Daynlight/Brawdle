@@ -1,10 +1,15 @@
-/////// Init Program ////////////////////////////////////////////////////////
+///////// Lib Functions //////////////////////////////////////////////////////
+function delay(time) {
+    return new Promise(resolve => setTimeout(resolve, time));
+  }
+
+ /////// Init Program ////////////////////////////////////////////////////////
 //Import Data
 import ChampionsList from "./Assets/Champions.json" assert {type: 'json'};
 //Div Refs
-var ChampionsListDiv = document.getElementById("Champions");
-var WinnerDiv = document.getElementById("WinChempion");
-var AttribDiv = document.getElementById("ChampionsAttrib");
+var ChampionsListDiv = document.getElementById("ChampionsList");
+var WinnerDiv = document.getElementById("WinnerChempion");
+var AttribDiv = document.getElementById("AttribList");
 //Global Varibles
 var GameIsFinishedOrChecking = false;
 var AnimationDuration = 300;
@@ -31,7 +36,7 @@ async function CheckIfChempionIsWinnerChempion(ElementPointer){
     var ID = ElementPointer.currentTarget.myParam;
     var CurrentChempion = document.getElementById(`Chempion${ID}`);
 
-    if(CurrentChempion.className == "ChempionUsed" || GameIsFinishedOrChecking) return 0;
+    if(CurrentChempion.className == "UsedChempion" || GameIsFinishedOrChecking) return 0;
     GameIsFinishedOrChecking = true
     TryCount++;
     
@@ -40,14 +45,17 @@ async function CheckIfChempionIsWinnerChempion(ElementPointer){
 
     if(WinnerChempionID == ID)
     {
-        WinnerDiv.innerHTML = `Congrats, You guessed at ${TryCount} time. That was ${ChampionsList[ID].Name} <3</br>
-        <img src="Assets/Champions/${ChampionsList[ID].Icon}">`;
+        WinnerDiv.style.display = "grid";
+        WinnerDiv.innerHTML = 
+        `<div><img src="Assets/Champions/${ChampionsList[ID].Icon}"></br>
+        Congrats, You guessed at ${TryCount} time. That was ${ChampionsList[ID].Name} 💖</br>
+        <button onclick="document.location = 'index.html'">Play Again</button></div>`;
         return 0;
     }
     else
     {
         GameIsFinishedOrChecking = false;
-        CurrentChempion.className = "ChempionUsed";
+        CurrentChempion.className = "UsedChempion";
         return 0;
     }
 }
@@ -86,16 +94,3 @@ async function CompareAttribs(ID){
     if(ChampionsList[ID].Family == ChampionsList[WinnerChempionID].Family) Family.className = "Correct";
     else  Family.className = "InCorrect";
 }
-
-//No Game Functions
-function delay(time) {
-    return new Promise(resolve => setTimeout(resolve, time));
-  }
-function AtrribSetSize(){
-    var WinChampionsize = document.getElementById("WinChempion").clientHeight;
-    var ChampionsSize = document.getElementById("Champions").clientHeight;
-    var Height = window.innerHeight - (WinChampionsize + ChampionsSize) - 30;
-    if(document.getElementById("Attrib").clientHeight >= Height)document.getElementById("Attrib").style.height = `${Height}px`;
-}
-
-setInterval(AtrribSetSize, 100);
