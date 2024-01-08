@@ -10,7 +10,7 @@ var GameIsFinishedOrChecking = false;
 var AnimationDuration = 300;
 var TryCount = 0;
 //Get Winner
-var WinnerChempionID = Math.floor(Math.random() * Object.keys(Champions).length);
+var WinnerChempionID = Math.floor(Math.random() * Object.keys(ChampionsList).length);
 
 ///////// Render ChempionList and Add OnClick Event //////////////////////////
 for(var ID = 0; ID < Object.keys(ChampionsList).length; ID++){
