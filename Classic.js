@@ -21,7 +21,7 @@ var WinnerChempionID = Math.floor(Math.random() * Object.keys(ChampionsList).len
 for(var ID = 0; ID < Object.keys(ChampionsList).length; ID++){
     ChampionsListDiv.innerHTML += 
     `<div id="Chempion${ID}">
-    <img src="Assets/Champions/${ChampionsList[ID].Icon}">
+    <img alt="${ChampionsList[ID].Name}" src="Assets/Champions/${ChampionsList[ID].Icon}">
     </div>`;
 
     setTimeout(AddEventClick, 100, ID);
@@ -47,7 +47,7 @@ async function CheckIfChempionIsWinnerChempion(ElementPointer){
     {
         WinnerDiv.style.display = "grid";
         WinnerDiv.innerHTML = 
-        `<div><img src="Assets/Champions/${ChampionsList[ID].Icon}"></br>
+        `<div><img alt="${ChampionsList[ID].Name}" src="Assets/Champions/${ChampionsList[ID].Icon}"></br>
         Congrats, You guessed at ${TryCount} time. That was ${ChampionsList[ID].Name} 💖</br>
         <button onclick="document.location = 'index.html'">Play Again</button></div>`;
         return 0;
@@ -70,7 +70,7 @@ async function CompareAttribs(ID){
     var Rarity = Row.insertCell(3);
     var Release = Row.insertCell(4);
     var Family = Row.insertCell(5);
-    Icon.innerHTML = `<img class="TableIcon" src="Assets/Champions/${ChampionsList[ID].Icon}">`;
+    Icon.innerHTML = `<img alt="${ChampionsList[ID].Name}" class="TableIcon" src="Assets/Champions/${ChampionsList[ID].Icon}">`;
     Gender.innerHTML = ChampionsList[ID].Gender
     Role.innerHTML = ChampionsList[ID].Role
     Rarity.innerHTML = ChampionsList[ID].Rarity
